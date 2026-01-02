@@ -1,5 +1,8 @@
 # 🐾 PokeAPI Automation Suite
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![Python Version](https://img.shields.io/badge/python-3.12%2B-blue)
+
 A robust, production-ready API testing framework built with **Python** and **Pytest**. This project demonstrates automated validation of the [PokeAPI](https://pokeapi.co/), focusing on data integrity, error handling, and professional reporting.
 
 ---
@@ -31,26 +34,3 @@ Before running the tests, ensure you have Python installed. You can check your v
 
 ```bash
 python --version
-## ⚙️ Installation & Setup
-1. Clone the repository:
-git clone [https://github.com/YOUR_USERNAME/pokemon-api-testing.git](https://github.com/YOUR_USERNAME/pokemon-api-testing.git)
-cd pokemon-api-testing
-2. Install dependencies:
-pip install -r requirements.txt
-## 🧪 Running the Tests
-To execute the full suite and generate a self-contained report, run:
-pytest --html=report.html --self-contained-html
-## 📊 View the Report
-After running the tests, open the report.html file in your preferred web browser.
-
-✅ Green: Tests passed (API is behaving as expected).
-
-❌ Red: Tests failed (Potential bug found in the API or data changed).
-## 💡 Key Learnings
-While building this project, I implemented several industry-standard testing patterns:
-
-Fixtures: Used to manage the base URL and keep the code DRY (Don't Repeat Yourself).
-
-Edge Case Testing: Specifically verifying 404 Not Found responses for non-existent resources.
-
-JSON Schema Validation: Ensuring that required keys are present in the response body.
